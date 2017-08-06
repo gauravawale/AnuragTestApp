@@ -1,0 +1,22 @@
+app
+.config(
+	['$stateProvider','$urlRouterProvider',
+		function($stateProvider,$urlRouterProvider){
+			//%DEFAULT_STATE
+			$stateProvider
+				.state('/HelloWorld',{
+					url:'/HelloWorld',
+					templateUrl:'template/HelloWorld.html',
+					controller:'HelloWorldCTRL'
+				}
+			).state('/HelloWorld2',{
+					url:'/HelloWorld2',
+					templateUrl:'template/HelloWorld2.html',
+					controller:'HelloWorld2CTRL'
+				}
+			)
+			//%NEW_STATE
+
+		}
+	]
+)
